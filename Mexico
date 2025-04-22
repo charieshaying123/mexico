@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        /* background-color: #fff; */
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+      
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+       
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    
+        position: relative;
+   
+    
+    }
+   /* For screens larger than 1024px (desktop or larger), apply the specific changes */
+@media (min-width: 1025px) {
+    /* Only apply the following styles on desktop-sized screens and larger */
+    /* PC1 */
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        left: 12%;
+    }
+    .logo img {
+    max-height: 120px; /* Adjust the height to fit your design */
+    width: auto; /* Maintain the aspect ratio of the logo */
+    position: absolute;
+    left: 2%;
+}
+.hide-on-desktop {
+            display: none !important;
+        }
+       
+        .contact-form {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 300px; /* Made the form small but readable */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid maroon;
+
+
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #019875;
+}
+/* mexico cover */
+.container-cover{
+    
+}
+
+.container-cover {
+  display: flex;
+  gap: 20px; /* space between columns */
+  padding: 20px;
+}
+
+.column {
+  flex: 1; /* each column takes 50% */
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+.column-left{
+background-color: white;
+}
+.image-con{
+margin-left: 110px;
+}
+.container-inner{
+ border: 2px solid orange;
+ padding: 15px; 
+ width: 30vw; 
+ border-radius: 10px;
+}
+.column-right{
+
+}
+
+.lettering-image{
+height: 90vh; 
+width: 50vw; 
+opacity: 0.5;
+margin-left: 250px;
+}
+
+.culture-container-cover{
+padding: 0; 
+margin: 0; 
+line-height: 0;
+}
+.culture-column-left{
+padding: 0;
+ margin: 0; 
+line-height: 0; 
+}
+.culture-image-con{
+width: 100%;
+ height: 100%; 
+object-fit: cover; 
+display: block; 
+margin: 0; 
+padding: 0; 
+border: none;
+}
+.culture-container-inner0{
+z-index: 1; 
+position: absolute;
+ top: 205%;
+ height: 30vh; 
+left: 40%; 
+width: 40vw;
+background-image: url('./image/culture-word-.jpg');
+ background-repeat: no-repeat; 
+background-size: cover;
+border-color:   transparent;
+}
+.culture-container-inner1{
+z-index: 1; 
+position: absolute;
+ top: 240%;
+ height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c1.jpeg');
+ background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner2{
+z-index: 1; 
+position: absolute; 
+top: 240%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+background-image: url('./image/c2.png'); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner3{
+z-index: 1; 
+position: absolute; 
+top: 240%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/c3.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner4{
+z-index: 1;
+ position: absolute; 
+top: 287%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/5fbc94df-9b42-4218-8c15-e32133c6abcb.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner5{
+z-index: 1; 
+position: absolute; 
+top: 287%; 
+height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c4.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner6{
+z-index: 1; 
+position: absolute; 
+top: 287%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+ background-image: url('./image/c5.jpg'); 
+background-repeat: no-repeat center; 
+background-size: cover;
+
+
+}
+
+
+
+
+
+}
+/* mini laptop */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 0; /* Optional: only if needed to reset positioning */
+    background-color: rgb(17, 180, 25); /* Green background */
+  }
+  .hide-on-desktop {
+            display: none !important;
+        }
+        .container-cover{
+   
+}
+.column-left{
+background-color: white;
+}
+.image-con{
+margin-left: 50px;
+
+}
+.container-inner{
+ border: 2px solid orange;
+ padding: 15px; 
+ width: 30vw; 
+ border-radius: 10px;
+}
+.column-right{
+background-color: white;
+}
+
+.lettering-image{
+height: 90vh; 
+width: 60vw; 
+opacity: 0.5;
+margin-left: 60px;
+
+}
+
+.culture-container-cover{
+padding: 0; 
+margin: 0; 
+line-height: 0;
+}
+.culture-column-left{
+padding: 0;
+ margin: 0; 
+line-height: 0; 
+}
+.culture-image-con{
+width: 100%;
+ height: 100%; 
+object-fit: cover; 
+display: block; 
+margin: 0; 
+padding: 0; 
+border: none;
+}
+.culture-container-inner0{
+z-index: 1; 
+position: absolute;
+ top: 210%;
+ height: 30vh; 
+left: 40%; 
+width: 40vw;
+background-image: url('./image/culture-word-.jpg');
+ background-repeat: no-repeat; 
+background-size: cover;
+border-color:   transparent;
+}
+
+.culture-container-inner1{
+z-index: 1; 
+position: absolute;
+ top: 260%;
+ height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c1.jpeg');
+ background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner2{
+z-index: 1; 
+position: absolute; 
+top: 260%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+background-image: url('./image/c2.png'); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner3{
+z-index: 1; 
+position: absolute; 
+top: 260%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/c3.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner4{
+z-index: 1;
+ position: absolute; 
+top: 305%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/5fbc94df-9b42-4218-8c15-e32133c6abcb.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner5{
+z-index: 1; 
+position: absolute; 
+top: 305%; 
+height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c4.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner6{
+z-index: 1; 
+position: absolute; 
+top: 305%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+ background-image: url('./image/c5.jpg'); 
+background-repeat: no-repeat center; 
+background-size: cover;
+
+
+}
+
+
+  
+}
+/* mobile mode */
+@media (max-width: 767px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    background-color: rgb(23, 24, 23); /* Optional for visibility */
+    padding: 15px;
+    align-items: center;
+    color: black;
+  }
+  .container-inner{
+ border: 2px solid orange;
+ padding: 15px; 
+ width: 90vw; 
+ border-radius: 10px;
+ margin-left: 20px;
+
+}
+.image-con{
+margin-left: 40px;
+
+}
+.lettering-image{
+display: none;
+
+}
+
+.culture-container-cover{
+padding: 0; 
+margin: 0; 
+line-height: 0;
+}
+.culture-column-left{
+padding: 20px;
+ margin: 0; 
+line-height: 0; 
+height: 200vh;
+margin-top: 20px;
+background-color: green;
+}
+.culture {
+
+    
+  height: 200vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-image-con {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+.culture-container-inner0{
+z-index: 1; 
+position: absolute;
+ top: 220%;
+ height: 30vh; 
+left: 40%; 
+width: 40vw;
+background-image: url('./image/culture-word-.jpg');
+ background-repeat: no-repeat; 
+background-size: cover;
+border-color:   transparent;
+}
+
+
+.culture-container-inner1{
+z-index: 1; 
+position: absolute;
+ top: 10%;
+ height: 40vh; 
+left: 0%; 
+width: 90vw;
+background-image: url('./image/c1.jpeg');
+ background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner2{
+z-index: 1; 
+position: absolute; 
+top: 33%; 
+height: 40vh; 
+left: 0%; 
+width: 90vw;
+background-image: url('./image/c2.png'); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner3{
+z-index: 1; 
+position: absolute; 
+top: 56%; 
+height: 40vh; 
+left: 0%; 
+width: 90vw;
+background-image: url('./image/c3.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner4{
+z-index: 1;
+ position: absolute; 
+top: 275%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/5fbc94df-9b42-4218-8c15-e32133c6abcb.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner5{
+z-index: 1; 
+position: absolute; 
+top: 275%; 
+height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c4.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner6{
+z-index: 1; 
+position: absolute; 
+top: 275%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+ background-image: url('./image/c5.jpg'); 
+background-repeat: no-repeat center; 
+background-size: cover;
+
+
+}
+
+
+}
+
+
+/* mini laptop */
+@media (min-width: 1024px) and (max-width: 1266px) {
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        position: relative; 
+        left: 0; /* Remove left positioning to avoid shifting */
+        background-color: red;
+    }
+    .hide-on-desktop {
+            display: none !important;
+        }
+        .container-cover{
+   
+}
+.column-left{
+background-color: white;
+}
+.image-con{
+margin-left: 50px;
+}
+.container-inner{
+ border: 2px solid orange;
+ padding: 15px; 
+ width: 40vw; 
+ border-radius: 10px;
+}
+.column-right{
+background-color: white;
+}
+
+.lettering-image{
+height: 90vh; 
+width: 50vw; 
+opacity: 0.5;
+margin-left: 50px;
+margin-top: 50px;
+}
+
+.culture-container-cover{
+padding: 0; 
+margin: 0; 
+line-height: 0;
+}
+.culture-column-left{
+padding: 0;
+ margin: 0; 
+line-height: 0; 
+}
+.culture-image-con{
+width: 100%;
+ height: 100%; 
+object-fit: cover; 
+display: block; 
+margin: 0; 
+padding: 0; 
+border: none;
+}
+.culture-container-inner0{
+z-index: 1; 
+position: absolute;
+ top: 220%;
+ height: 30vh; 
+left: 40%; 
+width: 40vw;
+background-image: url('./image/culture-word-.jpg');
+ background-repeat: no-repeat; 
+background-size: cover;
+border-color:   transparent;
+}
+
+.culture-container-inner1{
+z-index: 1; 
+position: absolute;
+ top: 260%;
+ height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c1.jpeg');
+ background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner2{
+z-index: 1; 
+position: absolute; 
+top: 260%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+background-image: url('./image/c2.png'); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.culture-container-inner3{
+z-index: 1; 
+position: absolute; 
+top: 260%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/c3.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner4{
+z-index: 1;
+ position: absolute; 
+top: 310%; 
+height: 40vh; 
+left: 25%; 
+width: 20vw;
+background-image: url('./image/5fbc94df-9b42-4218-8c15-e32133c6abcb.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner5{
+z-index: 1; 
+position: absolute; 
+top: 310%; 
+height: 40vh; 
+left: 47%; 
+width: 20vw;
+background-image: url('./image/c4.jpg'); 
+background-repeat: no-repeat; 
+background-size: cover;
+
+}
+
+.culture-container-inner6{
+z-index: 1; 
+position: absolute; 
+top: 310%; 
+height: 40vh; 
+left: 69%; 
+width: 20vw;
+ background-image: url('./image/c5.jpg'); 
+background-repeat: no-repeat center; 
+background-size: cover;
+
+
+}
+
+
+           
+}
+    .nav-links a {
+        text-decoration: none;
+        color: #2c3e50;
+        font-weight: 500;
+    }
+
+    /* Navbar link styles */
+    .nav-links a {
+        text-decoration: none;
+        color: white; /* Initial text color */
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for navbar links */
+    .nav-links a:hover {
+        color: #800000; /* Maroon color on hover */
+        transform: scale(1.1); /* Slightly increase the size on hover */
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: white;
+            width: 200px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .hamburger {
+            display: block;
+        }
+        .logo img {
+    max-height: 70px; /* Adjust the height to fit your design */
+    width: auto; /* Maintain the aspect ratio of the logo */
+    position: absolute;
+    left: 5%;
+}
+.hero{
+    background-color: red;
+}
+    }
+
+    /* Hero Section */
+    .hero {
+    position: relative;
+    height: 110vh;
+    background: url('./image/cover.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./image/flag.jpg') center/cover no-repeat;
+    opacity: 0.5; /* adjust to your liking */
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+    .hero-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        animation: slideUp 1s ease-out;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #600000;
+        transform: scale(1.05);
+    }
+
+    /* Features Section */
+    .features {
+        padding: 80px 20px;
+        background-color: #f9f9f9;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .features-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .feature-card {
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .feature-card i {
+        font-size: 40px;
+        color: #800000;
+        margin-bottom: 20px;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+    }
+    .feature-image-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.feature-image {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+}
+
+    /* Properties Section */
+    .properties {
+        padding: 80px 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #2c3e50;
+        font-size: 36px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .properties-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .property-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .property-card:hover {
+        transform: scale(1.05);
+    }
+
+    .property-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+    }
+
+    .property-card:hover img {
+        opacity: 0.8;
+    }
+
+    .property-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 80px 20px;
+        background-color: #ecf0f1;
+    }
+
+    .contact-form {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #bdc3c7;
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        padding: 15px;
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+        background-color: #600000;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+        0% { transform: translateY(30px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Map */
+    .map-container {
+        margin-top: 30px;
+        text-align: center;
+        height: 80vh;
+    }
+
+    .map-container iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        max-width: 600px; 
+        max-height: 450px; 
+    }
+    /* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #800000; /* Maroon color */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Optional: add some padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #600000; /* Darker maroon when hovering */
+}
+
+/* For Firefox */
+scrollbar {
+    width: 100vw;
+    height: 10px;
+
+}
+
+scrollbar-thumb {
+    background-color: #800000; /* Maroon color */
+    border-radius: 10px;
+}
+
+scrollbar-thumb:hover {
+    background-color: #600000; /* Darker maroon when hovering */
+}
+
+.logo img {
+    max-height: 70px; /* Adjust the height to fit your design */
+    width: auto; /* Maintain the aspect ratio of the logo */
+    position: absolute;
+}
+.total-rentals {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.total-rentals span {
+    color: #ff5733; /* Highlight color for the count */
+}
+.counter-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.counter-item {
+    text-align: center; /* Center the items within the counter-item */
+}
+
+.counter-icon {
+    width: 100px; /* Adjust size based on your image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the image and the counter */
+}
+
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.counter-container span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+
+/*  */
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.map-container, .contact-form {
+  flex: 1 1  45%;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+margin-top: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <img src="" alt="MEXICO"  />
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#properties">About</a>
+                <a href="#contact">Culture</a>
+                <a href="#contact">Tourist-spots</a>
+                <a href="#contact">Contact us</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 style="color:  white; text-shadow: 2px 2px 4px black, -1px -1px 2px rgba(0,0,0,0.5);
+">VIAJEMOS AHORA Y EXPLOREMOS MÉXICO!</h1>
+            <p style="color:  white; text-shadow: 4px 4px 4px black, -1px -1px 2px rgba(0,0,0,0.5); ">Explore and  enjoy in mexico know  culture famous tourist spots</p>
+            <button class="cta-button">Explore now</button>
+        </div>
+    </section>
+
+    <section class="mexico" >
+        <div class="container-cover" >
+          <div class="column-left" >
+            <!-- Left column content -->
+            <img class="image-con" src="./image/mexcio text.png" >
+            <div class="container-inner"  >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores beatae dolore, architecto hic harum ullam odit laboriosam ut aut praesentium amet, necessitatibus, similique quaerat! Maxime, laboriosam. Est, repudiandae quo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus sunt dolores corporis, hic dolore deleniti aut, blanditiis fuga repudiandae reiciendis cumque eveniet assumenda velit praesentium laboriosam, ad quo illum.
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolores iste explicabo, nobis a temporibus repellendus esse, autem excepturi minima cumque, aliquid sapiente labore expedita. Aliquam molestiae itaque quasi nihil?
+        </div>
+          </div>
+          <div class="column-right" >
+            <!-- Right column content -->
+            <img class="lettering-image" src="./image/lettering.jpg" >
+          
+          </div>
+        </div>
+      </section>
+
+      <!-- culture -->
+      <section class="mexico culture" >
+        <div class="container-cover culture-container-cover" >
+           
+            <div class="column-left culture-column-left" >
+              <!-- Left column content -->
+              <img class="image-con culture-image-con" src="./image/cinco.png" alt="Cinco Image"
+                   >
+                   <div class="container-inner culture-container-inner0" >
+                   
+                   </div>
+                   <div class="container-inner culture-container-inner1" >
+                   
+        </div>
+         <div class="container-inner culture-container-inner2"  >
+           
+        </div>
+        <div class="container-inner culture-container-inner3"  >
+           
+        </div>
+        <div class="container-inner culture-container-inner4"  >
+           
+        </div>
+        <div class="container-inner culture-container-inner5">
+           
+        </div>
+        <div class="container-inner culture-container-inner6" >
+           
+        </div>
+                </div>
+                
+          </div>
+          
+          
+      </section>
+    
+
+    <!-- <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="map-container">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15702.079279658035!2d124.0058345679088!3d10.30021922101533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a997000ab57b43%3A0x92d89133ff357f14!2sZoilo%20Compund!5e0!3m2!1sen!2sph!4v1740097800561!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section> -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-wrapper">
+          <!-- Map on the left -->
+          <div class="map-container">
+            <h3>Our Location</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15702.079279658035!2d124.0058345679088!3d10.30021922101533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a997000ab57b43%3A0x92d89133ff357f14!2sZoilo%20Compund!5e0!3m2!1sen!2sph!4v1740097800561!5m2!1sen!2sph" 
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+      
+          <!-- Contact form on the right -->
+          
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required >
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required class="text-area-form"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+         
+        </div>
+      </section>
+      
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+     // Function to animate the counter
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target'); // Get the target number
+    let count = 0; // Start from 0
+
+    // Function to update the counter value
+    const updateCounter = () => {
+        const increment = target / 100; // Increment value to reach the target smoothly
+        if (count < target) {
+            count += increment;
+            counter.textContent = Math.ceil(count); // Set the new count value
+            requestAnimationFrame(updateCounter); // Keep updating until the target is reached
+        } else {
+            counter.textContent = target; // Ensure we end with the exact target value
+        }
+    };
+
+    setTimeout(() => {
+        updateCounter(); // Start the counter animation after the delay
+    }, 500); // Adjust the delay time as needed (in milliseconds)
+});
+
+
+    </script>
+</body>
+</html>
